@@ -1,0 +1,1 @@
+# mines-online-asset-collection
