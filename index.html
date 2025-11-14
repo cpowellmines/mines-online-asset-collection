@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mines Online Asset Collection Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .nav-link.active {
+            background-color: #d1e5f8;
+            color: #1e3a8a;
+            font-weight: 700;
+        }
+        .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Main Container -->
+    <div class="flex flex-col md:flex-row min-h-screen">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="w-full md:w-64 bg-white p-6 shadow-2xl md:shadow-lg md:h-screen md:sticky md:top-0">
+            <h1 class="text-3xl font-extrabold text-blue-900 mb-6 border-b-2 pb-4 border-blue-200">Mines Online Asset Collection</h1>
+            <nav aria-label="Main navigation">
+                <ul class="space-y-2">
+                    <li><a href="#browsing" class="nav-link block px-4 py-3 rounded-lg text-lg text-gray-700 hover:bg-gray-100 transition-colors duration-200" aria-label="Go to Browsing Images section">Browsing Images</a></li>
+                    <li><a href="#downloading" class="nav-link block px-4 py-3 rounded-lg text-lg text-gray-700 hover:bg-gray-100 transition-colors duration-200" aria-label="Go to Downloading Images section">Downloading Images</a></li>
+                    <li><a href="#uploading" class="nav-link block px-4 py-3 rounded-lg text-lg text-gray-700 hover:bg-gray-100 transition-colors duration-200" aria-label="Go to Uploading Images section">Uploading Images</a></li>
+                    <li><a href="#citation-generator" class="nav-link block px-4 py-3 rounded-lg text-lg text-gray-700 hover:bg-gray-100 transition-colors duration-200" aria-label="Go to Citation and Attribution Generator">Citation & Attribution Generator</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="flex-1 p-8 md:p-12 overflow-y-auto">
+            <!-- Browsing Section -->
+            <section id="browsing" class="content-section active" aria-labelledby="browsing-heading">
+                <h2 id="browsing-heading" class="text-3xl font-bold text-gray-800 mb-4">Browsing Images</h2>
+                <p class="text-lg text-gray-700 mb-6">This section will help you navigate and browse images within the asset collection.</p>
+
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">1. Using Keywords</h3>
+                        <p class="text-gray-600 mb-4">Keywords, also known as tags, are one of the most powerful tools for navigating the asset collection. Keywords are descriptive words or phrases attached to images to help categorize and find them, regardless of what album they are in.</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li><span>How Keywords Work:</span> An image can have multiple keywords (e.g., 'campus', 'engineering', 'building', 'exterior'), making it discoverable through many different search terms.</li>
+                            <li><span>Finding Images by Keyword:</span> When you view a photo's metadata, you will see a list of its associated keywords. Clicking on any of these keywords will take you to a page that shows all other images with the same keyword. This is a great way to find visually similar images or images related to the same topic.</li>
+                            <li><span>Best Practices for Keywords:</span> To ensure reusability and searchability, we will be using a consistent set of keywords. When uploading or editing images, please choose from the existing keyword list as much as possible to avoid creating duplicates.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">2. Searching for Images</h3>
+                        <p class="text-gray-600 mb-4">The Mines Online Asset Collection provides powerful search capabilities to help you quickly locate specific images.</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li><span>Quick Search Field:</span> Simply type a word or phrase and press Enter. Piwigo will intelligently search the photo's name (title), file name, description, associated tags, and photo ID to find relevant results.</li>
+                            <li><span>Multi-Criteria Search:</span> For more refined and precise searches, you can access the dedicated search page. Here, you can apply various filters to narrow down your results:
+                                <ul class="list-circle list-inside ml-6 mt-1 space-y-1">
+                                    <li><span>Search by Word:</span> Similar to the quick search, but with additional options to search for *all* words or *any* of the words you enter.</li>
+                                    <li><span>Filter by Tag:</span> Search for photos associated with one or more specific tags.</li>
+                                    <li><span>Filter by Album:</span> Limit your search to photos within one or more specific albums, with an important option to include sub-albums in your search.</li>
+                                    <li><span>Filter by Author:</span> Search for photos uploaded by a particular author.</li>
+                                </ul>
+                            </li>
+                            <li><span>Searching within a Set:</span> When you are viewing an album or a tag page, you might see a "Search in this set" button or icon. Clicking this will apply the search filters specifically to the photos within that particular album or tag, helping you focus your search.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">3. Browsing by Albums</h3>
+                        <p class="text-gray-600 mb-4">The most common way to browse images in the Mines Online Asset Collection is through Albums.</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li><span>Album Structure:</span> Albums are organized like a directory tree. They can contain sub-albums, allowing for a hierarchical organization of our assets (e.g., "Campus Buildings" > "Green Center" > "Exterior Shots").</li>
+                            <li><span>Accessing Albums:</span> From the Piwigo homepage, you'll see a list of available albums. Click on an album to enter its page and view its contents.</li>
+                            <li><span>Navigation within Albums:</span> You can use the breadcrumb trail at the top to navigate back to parent albums, and pagination links at the bottom to move between pages of photos.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">4. Managing Keywords on Existing Assets (Single Edit)</h3>
+                        <p class="text-gray-600 mb-4">To perform cleanup, add detail, or refine the search terms for a single image, you can edit its metadata directly from the Photo Page.</p>
+                        <h4 class="text-xl font-medium text-gray-700 mt-4 mb-2">Workflow for Editing Keywords (Single Image):</h4>
+                        <ol class="list-decimal list-inside space-y-2 text-gray-600">
+                            <li><span>Locate the Image:</span> Navigate to the specific image you want to edit (e.g., via search or album browsing).</li>
+                            <li><span>Access the 'Edit' Option:</span> On the Photo Page, look for and click the <span>'Edit'</span> icon (a pencil symbol) in the toolbar. This opens the image's metadata editing screen.</li>
+                            <li><span>Locate the Tag/Keyword Field:</span> Find the dedicated input field for Tags or Keywords.</li>
+                            <li><span>Manage Tags:</span>
+                                <ul class="list-circle list-inside ml-6 mt-1 space-y-1">
+                                    <li><span>Adding Tags:</span> Type new keywords, separating them with commas or pressing Enter.</li>
+                                    <li><span>Removing Tags:</span> Click the 'X' next to any existing tag you want to remove.</li>
+                                </ul>
+                            </li>
+                            <li><span>Consistency Check:</span> Always prioritize using existing, consistent keywords over creating new ones to maintain collection integrity.</li>
+                            <li><span>Save Changes:</span> Click the <span>'Save'</span> button at the bottom of the editing screen to apply your changes.</li>
+                        </ol>
+                        <p class="text-gray-600 mt-4">Note: If you need to edit keywords for many images at once, use the Batch Manager instead, which is accessible from the album view toolbar.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Downloading Section -->
+            <section id="downloading" class="content-section" aria-labelledby="downloading-heading">
+                <h2 id="downloading-heading" class="text-3xl font-bold text-gray-800 mb-4">Downloading Images</h2>
+                <p class="text-lg text-gray-700 mb-6">This section will guide you through the process of downloading and organizing images from the Mines Online Asset Collection for use in your projects.</p>
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">1. How to Download an Image</h3>
+                        <p class="text-gray-600">You can download an image directly from its Photo Page.</p>
+                        <ul class="list-disc list-inside mt-2 space-y-2 text-gray-600">
+                            <li>Navigate to the specific image you wish to download.</li>
+                            <li>On the Photo Page, look for the Download Photo icon (usually a down arrow).</li>
+                            <li>Clicking this icon will initiate the download of the image to your computer. By default, Piwigo provides the original, highest-quality version of the image, however you can select from other sizes, as well.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">2. Tracking Image Usage</h3>
+                        <p class="text-gray-600">To help us efficiently track the use of our image assets across Mines Online, ProEd, and other projects, we will now be using a dedicated album for each course or project.</p>
+                        <p class="text-gray-600 mt-2"><span>Your Responsibility:</span> Once an image is used for a course or project, you must associate it with the correct project album.</p>
+                        <h4 class="text-xl font-medium text-gray-700 mt-4 mb-2">How to Associate an Image with a Project Album:</h4>
+                        <ol class="list-decimal list-inside space-y-2 text-gray-600">
+                            <li><span>Locate the Image:</span> After you have downloaded an image for a project, return to the image's Photo Page in Piwigo.</li>
+                            <li><span>Access the 'Edit' Option:</span> Look for the 'Edit' option for the photo (pencil-shaped icon).</li>
+                            <li><span>Find the 'Linked Albums' section:</span> Within the editing window, find the section to associate the image with an album.</li>
+                            <li>Click ‘Add’ to open the album dialog.</li>
+                            <li><span>Select or Create the Project Album:</span> Choose the correct album for your project. If an album for your project does not exist, you must create one first by clicking the <span>'Create a new album'</span> link in the dialog, selecting a parent album, and entering a name.
+                                <ul class="list-circle list-inside ml-6 mt-1 space-y-1">
+                                    <li><span>Example for a ProEd or Mines Online course:</span> 'EBGN595 FA25' (Course Code + Semester/Year).</li>
+                                    <li><span>Example for a HIVE project:</span> 'HIVE: [Project Title]' (e.g., 'HIVE: Oredigger Welcome Video').</li>
+                                    <li><span>Example for an internal document:</span> 'Internal: [Document Title]' (e.g., 'Internal: Guide to Piwigo').</li>
+                                </ul>
+                            </li>
+                            <li><span>Save Changes:</span> Be sure to save your changes to update the image's associations.</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Uploading Section -->
+            <section id="uploading" class="content-section" aria-labelledby="uploading-heading">
+                <h2 id="uploading-heading" class="text-3xl font-bold text-gray-800 mb-4">Uploading Images</h2>
+                <p class="text-lg text-gray-700 mb-6">This section will walk you through the process of adding new images to the Mines Online Asset Collection.</p>
+                
+                <!-- Uploading Video -->
+                <div class="mb-8 rounded-lg overflow-hidden shadow-lg border-4 border-gray-400">
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1136660037?h=0e867b2647&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Uploading Images to Piwigo"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+                <!-- End Uploading Video -->
+
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">1. What to Upload</h3>
+                        <p class="text-gray-600">To maintain a consistent and legally compliant collection, please only upload images that fall into one of the following categories:</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600 mt-4">
+                            <li>Content created by staff or students at the Colorado School of Mines.</li>
+                            <li>Images that are in the Public Domain.</li>
+                            <li>Content licensed under a Creative Commons (CC) license CC0 or CC BY (requiring attribution). Other CC license types are not permitted.</li>
+                            <li>Content that has been licensed to us by a third party for internal or external use, unless the license specifically restricts its upload to a centralized image database.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">2. Accessing the Upload Feature</h3>
+                        <p class="text-gray-600">To begin uploading images, you'll need to access the administration area of Piwigo. From the left-hand menu, navigate to Photos > Add. This will take you to the Photo Upload page.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">3. Choosing or Creating a Destination Album</h3>
+                        <p class="text-gray-600">Before you upload, you must select the album where your photos will be stored. Click the icon next to "Choose an album" on the Photo Upload page. A window will appear where you can select an existing album or create a new one.</p>
+                        
+                        <h4 class="text-xl font-medium text-gray-700 mt-4 mb-2">Creating a New Project Album:</h4>
+                        <p class="text-gray-600">If you are uploading assets for a new course or project, you must first create a dedicated album for tracking usage. This ensures all project-related assets are organized together.</p>
+                        <ol class="list-decimal list-inside space-y-2 text-gray-600 mt-2">
+                            <li>In the album selection dialog, click the link to <span>'Create a new album'</span> (or similar button/link).</li>
+                            <li>Select the Album you wish to place the project album inside (e.g., a top-level 'Courses' or 'Projects' album).</li>
+                            <li>Enter the Album name, strictly following our naming conventions:
+                                <ul class="list-circle list-inside ml-6 mt-1 space-y-1">
+                                    <li><span>Example for a ProEd or Mines Online course:</span> 'EBGN595 FA25' (Course Code + Semester/Year).</li>
+                                    <li><span>Example for a HIVE project:</span> 'HIVE: [Project Title]' (e.g., 'HIVE: Oredigger Welcome Video').</li>
+                                    <li><span>Example for an internal document:</span> 'Internal: [Document Title]' (e.g., 'Internal: Guide to Piwigo').</li>
+                                </ul>
+                            </li>
+                            <li>Click <span>'Create and select.'</span></li>
+                        </ol>
+                        <p class="text-gray-600 mt-4">If the album already exists, simply click the <span>'+'</span> icon next to it to select it.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">4. Selecting and Uploading Your Files</h3>
+                        <p class="text-gray-600">Once your destination album is chosen, you can select the image files from your computer using one of two methods: Click "Add Photos" to open a file browser or Drag and Drop files into the designated gray area on the page. After adding your files, click "Start Upload".</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">5. Post-Upload Actions</h3>
+                        <p class="text-gray-600">After your images have successfully uploaded, you'll have a few options. We have implemented a specific workflow for adding key metadata that will ensure our images are easy to find and reusable for years to come.</p>
+                        <h4 class="text-xl font-medium text-gray-700 mt-4 mb-2">Add Metadata:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li><span>File Name:</span> Do not edit the file name. The system handles this automatically.</li>
+                            <li><span>Title:</span> Add a concise title for the image. If there is a pre-existing title, use that. Otherwise, a short, descriptive title will suffice.</li>
+                            <li><span>Description:</span> Use the Description box to record all necessary citation and accessibility information. Please use the following specific format for consistency (you can generate this text using the <span>Citation & Attribution Generator</span> tool):
+                                <pre class="mt-2 p-2 bg-gray-100 border border-gray-300 rounded-lg text-sm overflow-auto">Alt Text: [alt text goes here]
+Source URL: [source URL goes here]
+Publisher: [publisher name goes here]
+Attribution: [attribution statement goes here]
+IEEE Citation: [IEEE Citation goes here] (If applicable for books, journals, or videos)</pre>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Citation Generator Section -->
+            <section id="citation-generator" class="content-section" aria-labelledby="citation-generator-heading">
+                <h2 id="citation-generator-heading" class="text-3xl font-bold text-gray-800 mb-4">Citation & Attribution Generator</h2>
+                <p class="text-lg text-gray-700 mb-6">Use this tool to easily create the formatted text you need for the Description field when adding a new image. Please note that this is for images you have sourced yourself, not those generated by the metadata tool.</p>
+
+                <div class="mt-8 p-6 bg-gray-200 rounded-lg shadow-inner max-w-2xl mx-auto">
+                    <div class="mb-4">
+                        <label for="image-title-input" class="block text-gray-700 font-medium mb-1">Image Title</label>
+                        <input type="text" id="image-title-input" class="w-full px-4 py-2 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500 transition duration-300" placeholder="e.g., Campus at Dawn">
+                    </div>
+                    <div class="mb-4">
+                        <label for="creator-name-input" class="block text-gray-700 font-medium mb-1">Creator/Author Name</label>
+                        <input type="text" id="creator-name-input" class="w-full px-4 py-2 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500 transition duration-300" placeholder="e.g., John Doe">
+                    </div>
+                    <div class="mb-4">
+                        <label for="publisher-input" class="block text-gray-700 font-medium mb-1">Publisher Name</label>
+                        <input type="text" id="publisher-input" class="w-full px-4 py-2 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500 transition duration-300" placeholder="e.g., Mines Online">
+                    </div>
+                    <div class="mb-4">
+                        <label for="source-url-input" class="block text-gray-700 font-medium mb-1">Source URL</label>
+                        <input type="text" id="source-url-input" class="w-full px-4 py-2 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500 transition duration-300" placeholder="e.g., https://example.com/image.jpg">
+                    </div>
+                    <div class="mb-4">
+                        <label for="license-notes-input" class="block text-gray-700 font-medium mb-1">License Type</label>
+                        <select id="license-notes-input" class="w-full px-4 py-2 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500 transition duration-300">
+                            <option value="">Select License</option>
+                            <option value="Mines">Mines</option>
+                            <option value="CC0">CC0</option>
+                            <option value="CC BY 4.0">CC BY 4.0</option>
+                            <option value="CC BY 3.0">CC BY 3.0</option>
+                            <option value="CC BY 2.5">CC BY 2.5</option>
+                            <option value="CC BY 2.0">CC BY 2.0</option>
+                            <option value="CC BY 1.0">CC BY 1.0</option>
+                            <option value="Public Domain">Public Domain</option>
+                            <option value="DepositPhotos">DepositPhotos</option>
+                            <option value="Written Permission">Written Permission</option>
+                        </select>
+                    </div>
+                    <div class="flex space-x-4 mb-6">
+                        <button id="generate-all-btn" class="w-full px-6 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors duration-300 shadow-md" aria-label="Generate Attribution and Citation">
+                            Generate
+                        </button>
+                    </div>
+                    <div class="relative bg-white p-4 rounded-lg border-2 border-gray-300">
+                        <textarea id="output-text" class="w-full h-40 bg-white text-gray-800 rounded-lg focus:outline-none resize-none" readonly placeholder="Your generated attribution and citation will appear here."></textarea>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Navigation Logic
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.content-section');
+
+            const showSection = (id) => {
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                    if ('#' + section.id === id) {
+                        section.classList.add('active');
+                    }
+                });
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === id) {
+                        link.classList.add('active');
+                    }
+                });
+            };
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    showSection(targetId);
+                    // Do not set window.location.hash
+                });
+            });
+
+            // No hashchange listener
+            
+            const initialHash = window.location.hash || '#browsing';
+            if (initialHash) { // Check if hash is not empty
+                const validSection = document.querySelector(initialHash);
+                if (validSection && validSection.classList.contains('content-section')) {
+                     showSection(initialHash);
+                } else {
+                    showSection('#browsing'); // Default to browsing
+                }
+            } else {
+                 showSection('#browsing');
+            }
+            
+            // Citation Generator Logic
+            const imageTitleInput = document.getElementById('image-title-input');
+            const creatorNameInput = document.getElementById('creator-name-input');
+            const publisherInput = document.getElementById('publisher-input');
+            const sourceUrlInput = document.getElementById('source-url-input');
+            const licenseNotesInput = document.getElementById('license-notes-input');
+            const generateAllBtn = document.getElementById('generate-all-btn');
+            const outputText = document.getElementById('output-text');
+
+            generateAllBtn.addEventListener('click', () => {
+                const title = imageTitleInput.value;
+                const creator = creatorNameInput.value;
+                const publisher = publisherInput.value;
+                const sourceURL = sourceUrlInput.value || "[Source URL]";
+                const license = licenseNotesInput.value;
+
+                // Placeholders for display
+                const creatorDisplay = creator || "[Creator Name]";
+                const publisherDisplay = publisher || "[Publisher Name]";
+                const titleDisplay = title || "[Image Title]";
+
+
+                // 1. Generate Attribution
+                let attribution = "";
+                
+                if (license === "Mines") {
+                    if (creator) {
+                        attribution = `${creator}/Colorado School of Mines`;
+                    } else {
+                        attribution = `Colorado School of Mines`;
+                    }
+                } else if (license === "Public Domain") {
+                    let authorString = "";
+                    if (creator && publisher) {
+                        authorString = `${creator}/${publisher}`;
+                    } else if (creator) {
+                        authorString = `${creator}`;
+                    } else if (publisher) {
+                        authorString = `${publisher}`;
+                    }
+                    attribution = authorString; // This will be blank if neither is provided
+                
+                } else if (license === "DepositPhotos") {
+                    if (creator) {
+                        attribution = `${creator}/DepositPhotos`;
+                    } else {
+                        attribution = `DepositPhotos`;
+                    }
+
+                } else if (license === "Written Permission") {
+                    if (title) {
+                        attribution = `"${title}"`;
+                        if (creator) {
+                            attribution += ` by ${creator}`;
+                        }
+                        if (publisher) {
+                            attribution += ` via ${publisher}`;
+                        }
+                        attribution += ". Used with Permission.";
+                    } else if (creator) {
+                        attribution = creator;
+                        if (publisher) {
+                            attribution += ` via ${publisher}`;
+                        }
+                        attribution += ". Used with Permission.";
+                    } else if (publisher) {
+                        // Use placeholder if only publisher is present
+                        attribution = `"[${titleDisplay}]" by ${creatorDisplay} via ${publisher}. Used with Permission.`;
+                    } else {
+                        // All blank
+                        attribution = `"[${titleDisplay}]" by ${creatorDisplay} via ${publisherDisplay}. Used with Permission.`;
+                    }
+                
+                } else if (license === "CC0" || (license && license.startsWith("CC BY"))) {
+                    // Removed publisher from this line
+                    attribution = `"[${titleDisplay}]" by ${creatorDisplay} is licensed under ${license}.`;
+                
+                } else {
+                    // Default or no license selected
+                    attribution = `"[${titleDisplay}]" by ${creatorDisplay} via ${publisherDisplay}.`;
+                }
+
+                // 2. Generate IEEE Citation
+                let creatorInitial = creatorDisplay;
+                if (creator) {
+                    const names = creator.split(' ');
+                    const lastName = names.pop();
+                    const initials = names.map(name => name[0]).join('.');
+                    creatorInitial = `${initials ? initials + ' ' : ''}${lastName}`;
+                }
+
+                const date = new Date();
+                const month = date.toLocaleString('en-US', { month: 'long' }); // Use 'long' for full month name
+                const day = date.getDate();
+                const year = date.getFullYear();
+
+                const ieeeCitation = `[1] ${creatorInitial}, "${titleDisplay}," ${publisherDisplay}, ${month}. ${day}, ${year}. [Online]. Available: ${sourceURL}`;
+
+                // 3. Combine Output
+                const output = `Alt Text: [alt text goes here]
+Source URL: ${sourceURL}
+Publisher: ${publisherDisplay}
+Attribution: ${attribution}
+IEEE Citation: ${ieeeCitation}`;
+                
+                outputText.value = output;
+            });
+        });
+    </script>
+</body>
+</html>
